@@ -1,1 +1,193 @@
-Hello World
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Emir Varupa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/3adf55c169.js" crossorigin="anonymous"></script>
+    <!-- JQUERY 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    -->
+</head>
+
+<body>
+    <div class="content">
+        <!-- HEADER -->
+        <div class='header'>
+            <div>
+                <img class="logo" src='images/EVLogo2.png' />
+            </div>
+            <input type="checkbox" id="chkbox">
+            <!-- HAMBURGER BAR -->
+            <label for="chkbox" class="show-menu">
+        <i class="fas fa-bars hamburger-bar" style="color:#feffff"></i>
+      </label>
+            <ul class='menu'>
+
+                <li><a href='#'>Home</a></label>
+                </li>
+                <li><a href='#profilepicture-section'>About me</a></li>
+                <li><a href='#skills-section'>Skills</a></li>
+                <li><a href='#projects-section'>Projects</a></li>
+
+            </ul>
+        </div>
+
+        <div class="contentaboutme">
+            <h1 class="contentname">EMIR VARUPA</h1>
+            <p class="contentdescription">Software Engineer</p>
+            <div class="div-content-icons">
+
+                <label class="content-icons">
+          <a class="content-icons-a" href="https://github.com/EmirVarupa" target="_blank">
+            <i class="fab fa-github fa-2x content-icons-i"></i>
+          </a>
+        </label>
+
+                <label class="content-icons">
+          <a class="content-icons-a" href="https://www.facebook.com/baza3formabuild" target="_blank">
+            <i class="fab fa-facebook fa-2x content-icons-i"></i>
+          </a>
+        </label>
+
+                <label class="content-icons">
+          <a class="content-icons-a" href="https://www.instagram.com/emir.v99/" target="_blank">
+            <i class="fab fa-instagram fa-2x content-icons-i"></i>
+          </a>
+        </label>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About me -->
+
+    <div style="width: 0px; padding-top: 70px;" id="profilepicture-section"></div>
+    <div class="profilepicturecenter">
+        <img class="profilepicture" src="images/EmirVarupa - Copy.png" width="300px">
+        <p class="about-me-intro">About me</p>
+        <hr class="small-hr">
+    </div>
+    <div class="about-me-text">
+        <p> My name is Emir Varupa, I'm from Zenica, Bosnia and Herzegovina. Currently a third year Software Engineering student at the University of Zenica. I'm interested in learning new programming languages, building projects and solving problems. I guess
+            by the stated interests you can figure out that I like a good challenge, other than that honestly I like anything related to computers and technology.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills-section" style="padding-top: 71px"></div>
+    <div class="skills-div-border">
+        <div class="profilepicturecenter">
+            <p class="about-me-intro">Skills</p>
+            <hr class="small-hr">
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-div">
+                <label>
+          <i class="fas fa-laptop fa-2x skills-icons"></i>
+        </label>
+                <p class="skills-text">Front-end</p>
+                <p class="skills-technology">HTML<br>CSS<br>JavaScript<br>Bootstrap</p>
+            </div>
+
+            <div class="skills-div">
+                <label>
+          <i class="fas fa-server fa-2x skills-icons "></i>
+        </label>
+                <p class="skills-text">Back-end</p>
+                <p class="skills-technology">Spring MVC<br>Spring Boot</p>
+            </div>
+
+            <div class="skills-div">
+                <label>
+          <i class="fas fa-database fa-2x skills-icons"></i>
+        </label>
+                <p class="skills-text">Databases</p>
+                <p class="skills-technology">MS SQL Server<br>MySQL</p>
+            </div>
+
+            <div class="skills-div">
+                <label>
+          <i class="fas fa-code fa-2x skills-icons"></i>
+        </label>
+                <p class="skills-text">Programming Languages</p>
+                <p class="skills-technology">C++<br>Java</p>
+            </div>
+
+            <!-- <div class="skills-div">
+      <label>
+        <i class="fas fa-cogs fa-2x skills-icons"></i>
+      </label>
+      <p class="skills-text">Other</p>
+      <p class="skills-technology">Adobe XD<br>Photoshop<br>Illustrator</p>
+    </div> -->
+        </div>
+    </div>
+
+    <div id="projects-section" style="padding-top: 71px;"></div>
+    <div class="profilepicturecenter">
+        <p class="about-me-intro">Projects</p>
+        <hr class="small-hr">
+    </div>
+
+    <div class="projects-container">
+        <div class="projects-div">
+            <a href="https://github.com/EmirVarupa/One-Page-WebsiteHMTLCSS" target="_blank">
+                <div>
+                    <img class="projects-image" src="/images/project1.jpg" alt="">
+                    <h1 class="projects-h">One-Page Website</h1>
+                    <p class="projects-p">Simple one page website using HTML and CSS</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="projects-div">
+            <a href="https://github.com/EmirVarupa/ConverterJS" target="_blank">
+                <div>
+                    <img class="projects-image" src="/images/project2.jpg" alt="">
+                    <h1 class="projects-h">Unit converter</h1>
+                    <p class="projects-p">Simple unit converter using JavaScript</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="projects-div">
+            <a href="https://github.com/EmirVarupa/jQueryWebsite" target="_blank">
+                <div>
+                    <img class="projects-image" src="/images/project3.jpg" alt="">
+                    <h1 class="projects-h">jQuery Website</h1>
+                    <p class="projects-p">jQuery website with simple effects</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="projects-div">
+            <a href="https://github.com/EmirVarupa/InfoPortal" target="_blank">
+                <div>
+                    <img class="projects-image" src="/images/project4.jpg" alt="">
+                    <h1 class="projects-h">Information Portal</h1>
+                    <p class="projects-p">Information portal with CRUD operations made using JSPs and Servlets</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="projects-div">
+            <a href="https://github.com/EmirVarupa/WebShop-SpringMVC" target="_blank">
+                <div>
+                    <img class="projects-image" src="/images/project5.jpg" alt="">
+                    <h1 class="projects-h">Web Shop</h1>
+                    <p class="projects-p">Web shop with CRUD operations created using Spring MVC</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
