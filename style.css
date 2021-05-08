@@ -8,7 +8,7 @@
 :root {
     --gray: #2f2f31;
     --lightgray: #c7c7c7;
-    --hrcolor: #207555;
+    --hrcolor: #007bff;
 }
 
 html {
@@ -273,7 +273,7 @@ h1 {
     width: 40px;
     margin: 0 auto;
     /* border-color: #5D6063; */
-    border-color: var(--hrcolor);
+    border-top: 2px solid var(--hrcolor);
 }
 
 
