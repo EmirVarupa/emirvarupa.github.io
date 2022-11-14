@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --gray: #2f2f31;
-    --lightgray: #c7c7c7;
-    --hrcolor: #007bff;
+    --darkgray: #242526;
+    --darkgray2: #18191A;
+    --gray: #e4e6eb;
+    --lightgray: #38393a;
+    --hrcolor: #2CABFF;
 }
 
 html {
@@ -17,7 +19,8 @@ html {
 
 body {
     height: 1200px;
-    color: #5D6063;
+    color: #e4e6eb;
+    background-color: var(--darkgray2);
     font-size: 20px;
 }
 
@@ -25,6 +28,10 @@ a:link,
 a:visited {
     text-decoration: none;
     color: #feffff;
+}
+
+.custom-theme-primary-1 {
+    color: #E73C7E;
 }
 
 
@@ -53,10 +60,6 @@ a:visited {
 
 .content-icons-a {
     transition: 0.4s;
-}
-
-.content-icons-a:hover {
-    color: var(--hrcolor);
 }
 
 @keyframes fadeIn {
@@ -181,6 +184,8 @@ a:visited {
     text-align: center;
     color: white;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -193,7 +198,8 @@ a:visited {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background: var(--gray);
+    align-items: center;
+    background: var(--darkgray);
     z-index: 100;
 }
 
@@ -223,8 +229,20 @@ a:visited {
     /* filter: invert(94%) sepia(52%) saturate(662%) hue-rotate(177deg) brightness(103%) contrast(110%); */
 }
 
+.logo-text {
+    color: white;
+    font-size: 36px;
+    margin-left: 90px;
+    /* filter: invert(94%) sepia(52%) saturate(662%) hue-rotate(177deg) brightness(103%) contrast(110%); */
+}
+
+.logo-text a:link,
+.logo-text a:visited {
+    color: white;
+}
+
 .menu {
-    margin-top: 25px;
+    margin: 0px;
 }
 
 .menu>li {
@@ -237,17 +255,20 @@ a:visited {
 }
 
 .menu>li>a:hover {
-    color: var(--hrcolor);
+    color: white;
+    animation: glitch 200ms infinite;
+    -webkit-animation: glitch 300ms infinite;
 }
 
 h1 {
-    color: #2f2f30;
+    color: var(--gray);
 }
 
 
-/* About me */
+/* ABOUT ME */
 
 .profilepicture {
+    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -266,7 +287,7 @@ h1 {
 
 .about-me-text {
     padding: 40px;
-    text-align: left;
+    text-align: center;
 }
 
 .small-hr {
@@ -275,6 +296,71 @@ h1 {
     /* border-color: #5D6063; */
     border-top: 2px solid var(--hrcolor);
 }
+
+
+/* ABOUT ME END */
+
+
+/* GLITCH */
+
+#content1 i {
+    font-size: 2rem;
+    margin: 0.5rem;
+    transition: all 150ms ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+}
+
+.skills-icons-wrapper i {
+    transform: scale(1.2);
+    transform: translate(-1px, -1px);
+    animation: glitch 200ms infinite;
+    -webkit-animation: glitch 300ms infinite;
+    color: white;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -3px 2px #E73C7E, -2px -4px #2CABFF, -1px -1px black, 3px 5px rgb(0, 0, 0);
+    }
+    35% {
+        text-shadow: -2px -4px #E73C7E, 2px 1x #2CABFF, -1px -1px black, 3px 5x 5px rgb(0, 0, 0);
+    }
+    40% {
+        text-shadow: 2px -1px #E73C7E, -4px 1px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+    75% {
+        text-shadow: -3px -1px #E73C7E, -2px -2px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: -2px -1px #E73C7E, 2px -1px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+}
+
+@keyframes glitch-div {
+    0% {
+        box-shadow: -3px 2px #E73C7E, -2px -4px #2CABFF, -1px -1px black, 3px 5px rgb(0, 0, 0);
+    }
+    35% {
+        box-shadow: -2px -4px #E73C7E, 2px 1x #2CABFF, -1px -1px black, 3px 5x 5px rgb(0, 0, 0);
+    }
+    40% {
+        box-shadow: 2px -1px #E73C7E, -4px 1px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+    75% {
+        box-shadow: -3px -1px #E73C7E, -2px -2px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: -2px -1px #E73C7E, 2px -1px #2CABFF, -1px -1px black, 3px 5px 5px rgb(0, 0, 0);
+    }
+}
+
+.content-icons-a:hover {
+    animation: glitch 200ms infinite;
+    -webkit-animation: glitch 300ms infinite;
+}
+
+
+/* GLITCH END */
 
 
 /* HAMBURGER BAR */
@@ -297,7 +383,7 @@ label {
 }
 
 .skills-div-border {
-    background-color: #f2f2f5;
+    background-color: var(--darkgray);
     border-bottom: 1px solid var(--lightgray);
     border-top: 1px solid var(--lightgray);
 }
@@ -306,17 +392,30 @@ label {
     text-align: center;
 }
 
-.skills-icons {
+
+/* .skills-icons {
     color: var(--gray);
     margin-left: 25px;
+} */
+
+.skills-icons {
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 .skills-text {
     margin: 0;
-    color: var(--gray);
+    color: #2CABFF;
 }
 
 .skills-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 170px;
 }
 
@@ -340,9 +439,8 @@ label {
 }
 
 .projects-div {
-    box-shadow: 0 2px 15px rgb(100, 100, 100);
     margin: 10px;
-    background-color: #f2f2f5;
+    background-color: var(--darkgray);
     border: 1px solid var(--lightgray);
     transition: 0.4s;
 }
@@ -355,15 +453,16 @@ label {
 }
 
 .projects-p {
-    color: #353a40;
+    color: var(--gray);
 }
 
 .projects-h {
-    transition: 0.4s;
+    transition: all 150ms ease-in-out;
 }
 
-.projects-h:hover {
-    color: var(--hrcolor);
+.projects-div:hover .projects-h {
+    animation: glitch 200ms infinite;
+    -webkit-animation: glitch 300ms infinite;
 }
 
 
@@ -406,7 +505,7 @@ label {
         position: fixed;
         display: flex;
         justify-content: space-between;
-        background: var(--gray);
+        background: var(--darkgray);
     }
     .logo {
         margin-left: 20px;
@@ -417,12 +516,13 @@ label {
         margin-top: 70px;
         left: -100%;
         top: 0;
-        background: #feffff;
+        background: #242526;
         width: 100vw;
         height: 100vh;
         text-align: center;
         padding: 80px;
         transition: 0.5s;
+        border-top: 1px solid var(--lightgray);
     }
     #chkbox:checked~.menu {
         left: 0;
@@ -430,7 +530,7 @@ label {
     a:link,
     a:visited {
         text-decoration: none;
-        color: #353a40;
+        color: white;
     }
     .menu>li {
         display: block;
@@ -442,7 +542,7 @@ label {
         margin-top: 0px;
     }
     .menu>li>a:hover {
-        color: var(--hrcolor);
+        color: white;
         transition-duration: 0.4s;
     }
     /* HEADER-END */
