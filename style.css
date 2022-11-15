@@ -438,6 +438,15 @@ label {
     width: 750px;
 }
 
+.projects-image-2-container {
+    padding: 20px;
+}
+
+.projects-image-2 {
+    width: 710px;
+    border: 1px solid var(--lightgray);
+}
+
 .projects-div {
     margin: 10px;
     background-color: var(--darkgray);
