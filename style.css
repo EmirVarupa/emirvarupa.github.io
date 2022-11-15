@@ -556,8 +556,12 @@ label {
     }
     /* HEADER-END */
     /* PROJECTS */
-    .projects-image {
+    .projects-image,
+    .projects-image-2-container {
         width: 95vw;
+    }
+    .projects-image-2 {
+        width: 90vw;
     }
     /* PROJECTS END */
 }
