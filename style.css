@@ -175,6 +175,9 @@ a:visited {
 }
 
 .content-icons {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
     animation: fadeIn2 ease 2.5s;
     -webkit-animation: fadeIn2 ease 2.5s;
 }
@@ -364,13 +367,6 @@ h1 {
 
 
 /* HAMBURGER BAR */
-
-label {
-    display: inline-block;
-    width: 90px;
-    text-align: left;
-}
-
 
 /* SKILLS */
 
