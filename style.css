@@ -479,7 +479,7 @@ h1 {
 @media only screen and (max-width: 770px) {
     .show-menu {
         display: block;
-        margin-right: 0px;
+        margin-right: 20px;
     }
     .hamburger-bar {
         font-size: 1em;
