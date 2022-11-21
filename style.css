@@ -520,6 +520,9 @@ label {
         margin-left: 20px;
         height: 40px;
     }
+    .logo-text {
+        margin-left: 20px;
+    }
     .menu {
         position: fixed;
         margin-top: 70px;
